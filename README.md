@@ -1,33 +1,61 @@
 # AI-SOPs
 
-**English** | [中文](#中文)
+![SOPs](https://img.shields.io/badge/SOPs-agent--ready-2ea44f)
+![Docs](https://img.shields.io/badge/docs-human%20%2B%20AI-blue)
+![Bilingual](https://img.shields.io/badge/language-English%20%7C%20中文-orange)
+![Markdown](https://img.shields.io/badge/format-Markdown-black)
+![License](https://img.shields.io/badge/license-MIT-5865f2)
 
-AI-SOPs is a practical playbook repository for turning repeatable work into clear, executable SOPs for humans and AI agents.
+> **Reusable operating procedures for humans and AI agents.**
 
-The core idea:
+**1 production SOP | 1 reusable template | 1 quality checklist | bilingual project guide | agent-executable Markdown**
 
-> A human prepares the context and makes key decisions.
-> An AI agent follows the SOP, builds the workflow, verifies the result, and reports what remains.
+---
 
-This repository is for workflows that should be done reliably more than once, especially workflows where the handoff between a person and an AI agent needs to be precise.
+## Language / 语言
 
-## Why This Exists
+[English](#english) | [中文](#中文)
 
-Most AI prompts describe what the user wants right now. A good SOP describes how the work should be done every time.
+---
 
-AI-SOPs helps convert one successful workflow into a reusable document that another AI agent can execute later with less ambiguity.
+## English
 
-Each SOP answers:
+**AI-SOPs is a practical SOP system for turning successful AI-assisted workflows into reusable, executable documents.**
 
-- What is the final outcome?
-- What should the human prepare first?
-- What inputs should be given to the AI agent?
-- What steps should the AI execute?
-- How should the AI verify the result?
-- What should the human do after the AI finishes?
-- What can go wrong, and how should it be fixed?
+Not just prompts. A complete SOP tells the human what to prepare, tells the AI agent what to do, defines how the result should be verified, and explains what the human should do after the AI finishes.
 
-## Repository Structure
+This repository is designed for workflows that should be repeated reliably: setting up knowledge systems, configuring tools, building project environments, publishing repositories, onboarding agents, and documenting operational processes.
+
+## Why AI-SOPs
+
+Most AI conversations disappear after the task is done. AI-SOPs turns the best parts of those conversations into durable procedures.
+
+Each SOP is written so another AI agent can pick it up later and execute it with clear boundaries:
+
+- Human preparation
+- Required inputs
+- AI execution plan
+- Files and directories to create
+- Verification checklist
+- Human follow-up
+- Common failure modes
+
+## Available SOPs
+
+| SOP | What It Builds | Status |
+| --- | --- | --- |
+| [Obsidian Karpathy LLM-Wiki SOP](docs/obsidian-karpathy-llm-wiki-sop.md) | An Obsidian vault structured as an LLM-maintained personal wiki | Ready |
+
+## Quick Start
+
+1. Open an SOP in `docs/`.
+2. Complete the "Human Preparation" section.
+3. Give the SOP and your project-specific inputs to an AI agent.
+4. Ask the agent to execute the "AI Execution Plan".
+5. Review the verification checklist before accepting the result.
+6. Complete the human follow-up section.
+
+## Repository Map
 
 ```text
 AI-SOPs/
@@ -43,65 +71,53 @@ AI-SOPs/
     obsidian-llm-wiki-file-tree.md
 ```
 
-## Available SOPs
+## Write A New SOP
 
-- [Build an Obsidian LLM-Wiki Based on Karpathy's LLM Wiki Idea](docs/obsidian-karpathy-llm-wiki-sop.md)
+Start from the reusable template:
 
-## How To Use
+- [SOP template](templates/ai-sop-template.md)
+- [SOP quality checklist](checklists/sop-quality-checklist.md)
 
-1. Choose an SOP from `docs/`.
-2. Complete the "Human Preparation" section.
-3. Give the SOP and your inputs to an AI agent.
-4. Ask the AI agent to execute the "AI Execution Plan".
-5. Review the verification checklist.
-6. Complete the human follow-up work.
-
-## How To Write A New SOP
-
-1. Copy [templates/ai-sop-template.md](templates/ai-sop-template.md).
-2. Save the new SOP under `docs/`.
-3. Fill in every section.
-4. Check it with [checklists/sop-quality-checklist.md](checklists/sop-quality-checklist.md).
-5. Add it to the "Available SOPs" section.
-
-## SOP Principles
-
-- Make the final state explicit.
-- Separate human responsibilities from AI responsibilities.
-- Include concrete file paths, commands, examples, and expected outputs.
-- Include verification before completion.
-- Avoid hidden chat history or unstated assumptions.
-- Make the document reusable by another person and another AI agent.
+A good SOP should be executable without hidden chat history. If another person can hand it to another AI agent and get the same result, it is doing its job.
 
 ---
 
 ## 中文
 
-AI-SOPs 是一个面向人与 AI agent 协作的 SOP 文档仓库。
+**AI-SOPs 是一个把 AI 协作流程沉淀成可复用 SOP 的文档系统。**
 
-它的目标不是保存一次性的 prompt，而是把一套已经跑通的流程沉淀成可复用、可执行、可验证的操作文档。
+它不是单纯保存 prompt，而是把一次跑通的流程整理成完整操作文档：人需要提前准备什么，AI agent 应该怎么执行，做完以后怎么验证，人还需要继续做哪些收尾工作。
 
-核心思路：
+这个仓库适合沉淀那些未来还会重复执行的流程：知识库搭建、工具配置、项目环境初始化、GitHub 仓库发布、agent 上手流程、团队操作规范等。
 
-> 人负责准备上下文、做关键决策、验收结果。
-> AI agent 按照 SOP 执行流程、构建环境、完成验证、说明剩余工作。
+## 为什么需要 AI-SOPs
 
-如果一个任务未来还会重复做，或者你希望另一个 AI agent 也能按同样标准完成它，就适合把它写成这里的 SOP。
+很多 AI 对话在任务完成后就消失了。AI-SOPs 的目标是把这些成功经验变成长期可复用的操作流程。
 
-## 这个仓库解决什么问题
+每份 SOP 都应该让另一个 AI agent 也能按文档执行，并且边界清楚：
 
-普通 prompt 往往只描述“我现在想要什么”。
-好的 SOP 会描述“这类事情每次应该怎么做”。
+- 人的准备工作
+- 必要输入
+- AI 执行步骤
+- 需要创建的文件和目录
+- 验证清单
+- 人的后续工作
+- 常见失败模式
 
-每份 SOP 都应该说清楚：
+## 当前 SOP
 
-- 最终要得到什么？
-- 人在开始前要准备什么？
-- 需要给 AI agent 哪些输入？
-- AI agent 应该按什么步骤执行？
-- AI agent 做完后如何验证？
-- 人在 AI 完成后还要继续做什么？
-- 常见错误是什么，怎么发现和修复？
+| SOP | 构建内容 | 状态 |
+| --- | --- | --- |
+| [Obsidian Karpathy LLM-Wiki SOP](docs/obsidian-karpathy-llm-wiki-sop.md) | 一个由 LLM 维护的 Obsidian 个人 Wiki 知识库 | Ready |
+
+## 快速开始
+
+1. 打开 `docs/` 中的一份 SOP。
+2. 先完成 “Human Preparation / 人的准备工作”。
+3. 把 SOP 和你的具体输入交给 AI agent。
+4. 要求 agent 执行 “AI Execution Plan”。
+5. 按验证清单检查结果。
+6. 完成人需要继续做的后续工作。
 
 ## 仓库结构
 
@@ -119,32 +135,11 @@ AI-SOPs/
     obsidian-llm-wiki-file-tree.md
 ```
 
-## 当前 SOP
+## 新增 SOP
 
-- [基于 Karpathy LLM Wiki 思路搭建 Obsidian LLM-Wiki](docs/obsidian-karpathy-llm-wiki-sop.md)
+从模板开始：
 
-## 如何使用
+- [SOP 模板](templates/ai-sop-template.md)
+- [SOP 质量检查表](checklists/sop-quality-checklist.md)
 
-1. 从 `docs/` 里选择一份 SOP。
-2. 先完成其中的“Human Preparation / 人的准备工作”。
-3. 把 SOP 和你的具体输入交给 AI agent。
-4. 要求 AI agent 执行 “AI Execution Plan”。
-5. 根据验证清单检查结果。
-6. 完成 SOP 里列出的后续人工工作。
-
-## 如何新增一份 SOP
-
-1. 复制 [templates/ai-sop-template.md](templates/ai-sop-template.md)。
-2. 把新文件放到 `docs/`。
-3. 填完整所有章节。
-4. 用 [checklists/sop-quality-checklist.md](checklists/sop-quality-checklist.md) 检查质量。
-5. 在 README 的“当前 SOP”里添加链接。
-
-## 好 SOP 的标准
-
-- 最终状态清楚。
-- 人做什么、AI 做什么分得清楚。
-- 有路径、命令、示例和预期输出。
-- 有验证步骤，而不是“做完就算”。
-- 不依赖隐藏聊天上下文。
-- 另一个人和另一个 AI agent 也能复用。
+一份好的 SOP 不应该依赖隐藏聊天上下文。另一个人把它交给另一个 AI agent，也应该能得到稳定结果。
