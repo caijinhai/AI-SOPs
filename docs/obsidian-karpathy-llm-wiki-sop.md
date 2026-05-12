@@ -49,8 +49,8 @@ Before the AI agent starts, the human should prepare:
 Recommended human decisions:
 
 ```text
-Vault path: /Users/<user>/Documents/obsidian/wiki
-GitHub repository: <github-user>/wiki
+Vault path: <absolute-path-to-obsidian-vault>
+GitHub repository: <github-username>/<repository-name>
 Repository visibility: private
 First test topic: Karpathy LLM Wiki
 ```
@@ -346,10 +346,10 @@ Set `folder` to `templates`.
 Please execute the SOP "Build an Obsidian LLM-Wiki Based on Karpathy's LLM Wiki Idea".
 
 Target vault path:
-/Users/caijinhai/Documents/obsidian/wiki
+<absolute-path-to-obsidian-vault>
 
 GitHub repository:
-caijinhai/wiki
+<github-username>/<repository-name>
 
 Repository visibility:
 private
@@ -373,4 +373,3 @@ This SOP is complete when:
 - An AI agent can use `AGENTS.md` and `prompts/ingest-source.md` to update the wiki.
 - Dataview dashboards can render after plugin installation.
 - Git backup works or the remaining Git setup is explicitly documented.
-
